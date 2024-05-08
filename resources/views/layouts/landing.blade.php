@@ -21,7 +21,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body dir="rtl" class="antialiased ">
+    <body dir="rtl" class="antialiased absolute left-0 top-0">
         <div class="min-h-screen bg-white">
             <livewire:layout.landingNav />
 

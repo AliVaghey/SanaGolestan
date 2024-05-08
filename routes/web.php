@@ -9,12 +9,8 @@ Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('packages', 'packages')->name('packages');
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
-
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
-
-//Route::view('')
+Route::middleware(['auth'])->group(function () {
+    Route::view('/dashboard', 'dashboard')->name('dashboard');
+    Route::view('/packages', 'packages')->name('packages');
+    Route::view('/profile', 'profile')->name('profile');
+});
