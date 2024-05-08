@@ -6,22 +6,22 @@
         <meta name="keywords" content="حسابداری, حسابرسی, مالیات, استخدام">
     </x-slot>
 
-    <div DIR="rtl" class="">
-        <img class="w-full -z-50" src="{{ Vite::image('hero_section.png') }}" alt="hero_image" draggable="false">
-        <div class="absolute top-60 right-36">
+    <div>
+        <img class="w-full h-80 sm:h-auto -z-50" src="{{ Vite::image('hero_section.png') }}" alt="hero_image" draggable="false">
+        <div class="absolute top-12 right-10 sm:top-16 sm:right-12 md:top-24 md:right-10 lg:top-60 lg:right-36">
 
-            <h1 class="text-5xl font-bold text-white">شرکت حسابداران برتر<br> سناء گلستان</h1>
-            <p class="mt-5 text-lg text-[#F9F9F9]">ارائه کلیه خدمات حسابداری و حسابرسی به همراه مشاوره تخصصی در امور مالی</p>
+            <h1 class="text-lg lg:text-5xl md:text-3xl font-bold text-white">شرکت حسابداران برتر<br> سناء گلستان</h1>
+            <p class="mt-5 text-xs lg:text-lg text-[#F9F9F9]">ارائه کلیه خدمات حسابداری و حسابرسی به <br class="sm:hidden"> مشاوره تخصصی در امور مالی</p>
 
-            <div class="mt-10">
+            <div class="mt-5 sm:mt-10">
                 <div>
-                    <a class="text-black text-xl font-bold bg-white pt-3 pb-4 px-5 rounded-full hover:bg-[#FFBD2A] transition" href="#">دوره های برتر</a>
+                    <a class="text-black text-sm lg:text-xl md:font-bold bg-white pt-1 pb-2 lg:pt-3 lg:pb-4 px-2.5 lg:px-5 rounded-full hover:bg-[#FFBD2A] transition" href="#">دوره های برتر</a>
                     <div class="flex">
-                        <div class="mt-10 flex flex-col w-36 justify-center items-center">
+                        <div class="mt-2 sm:mt-10 flex flex-col sm:w-36 justify-center items-center">
                             <div class="text-white font-bold">4359</div>
-                            <div class="text-md text-gray-400">تعداد بازدید کنندگان</div>
+                            <div class="text-xs sm:text-md text-gray-400">تعداد بازدید کنندگان</div>
                         </div>
-                        <img class="h-10 w-auto mt-12" src="{{ Vite::image('users.png') }}" alt="users">
+                        <img class="h-7 sm:h-10 w-auto mt-5 sm:mt-12" src="{{ Vite::image('users.png') }}" alt="users">
                     </div>
                 </div>
             </div>
