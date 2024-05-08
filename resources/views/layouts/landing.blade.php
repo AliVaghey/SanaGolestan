@@ -12,8 +12,11 @@
         @endif
 
         @if(isset($title))
-            {{ $title }}
+            @php($title .= " - سناء گلستان")
+        @else
+            @php($title = "سناء گلستان")
         @endif
+        <title>{{ $title }}</title>
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
