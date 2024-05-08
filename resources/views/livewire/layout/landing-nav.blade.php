@@ -55,10 +55,16 @@
         </div>
 
         {{-- Authentication --}}
-        <div class="flex flex-col">
+        <div class="flex flex-col mt-3 pt-3 border-t border-blue-950">
             @auth
-                <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('home')">
+                <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     داشبورد
+                </x-mobile-link>
+                <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    دوره های شما
+                </x-mobile-link>
+                <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    تنظیمات
                 </x-mobile-link>
             @else
                 <x-mobile-link :href="route('')" :active="request()->routeIs('home')">
