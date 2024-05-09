@@ -106,9 +106,51 @@
     </div>
 
     {{-- Resume --}}
-    <div class="w-screen flex justify-center">
-        <div class="border-8 border-b-blue-950 ">
-
+    <div class="w-screen flex justify-center my-36">
+        <div class="flex flex-col items-center w-11/12 lg:w-1/2 h-fit rounded-[70px] border-[20px] border-blue-950 ">
+            <div class="bg-white w-2/3 h-6 lg:h-16 -mt-5"></div>
+            <img class="mt-5" src="{{ Vite::image('quote.png') }}" alt="quote mark" draggable="false">
+            <h3 class="text-xl text-center px-4 lg:text-3xl my-4">برای همکاری با ما رزومه ی خود را ارسال کنید.</h3>
+            <a href="#" class="text-sm lg:text-lg font-bold text-white mt-8 lg:mt-16 px-5 py-2 bg-[#FFBD2A] rounded-lg hover:bg-[#26335D] transition">فرم رزومه</a>
+            <div class="bg-white w-2/3 h-6 lg:h-16 -mb-5"></div>
         </div>
     </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    {{-- tutors --}}
+    <div class="w-full h-96 flex flex-col justify-center items-center">
+        <img class="hidden lg:block absolute left-0 -my-96" src="{{ Vite::image('lines.svg') }}" alt="lines">
+        <div class="w-1/2">
+            <div class="text-[#26335D] font-bold">تیم ما</div>
+            <h2 class="text-4xl mb-4 font-bold">اساتید برتر شرکت سنا گلستان</h2>
+            <div class="mb-10 w-2/3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+        </div>
+        <div class="swiper landingSwiper w-1/2 h-96 bg-gray-500">
+            <div class="swiper-wrapper bg-red-800">
+                <div class="swiper-slide bg-amber-300">
+                    <div class="p-5 bg-red-950 text-white w-fit">hello world</div>
+                </div>
+                <div class="swiper-slide bg-amber-300"></div>
+                <div class="swiper-slide bg-amber-300"></div>
+                <div class="swiper-slide bg-amber-300"></div>
+                <div class="swiper-slide bg-amber-300"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".landingSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
 </x-landing-layout>
