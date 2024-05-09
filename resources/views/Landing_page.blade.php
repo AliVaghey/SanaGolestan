@@ -106,7 +106,9 @@
     </div>
 
     {{-- Resume --}}
-    <div class="">
+    <div class="w-screen flex justify-center">
+        <div class="border-8 border-b-blue-950 ">
 
+        </div>
     </div>
 </x-landing-layout>

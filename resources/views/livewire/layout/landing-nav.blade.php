@@ -8,7 +8,14 @@
                 <x-navbar-link href="{{ route('about') }}" :active="request()->routeIs('about')" wire:navigate.hover>درباره ما</x-navbar-link>
                 <x-navbar-link href="{{ route('contact') }}" :active="request()->routeIs('contact')" wire:navigate.hover>تماس با ما</x-navbar-link>
             </div>
-            <div class="rounded-full py-2 px-4 border border-blue-950 text-[#212121] hover:bg-[#FFBD2A] hover:border-white transition">پروفایل کاربری</div>
+            @auth
+                <a href="{{ route('dashboard') }}" class="rounded-full py-2 px-4 border border-blue-950 text-[#212121] hover:bg-[#FFBD2A] hover:border-white transition">پروفایل کاربری</a>
+            @else
+                <div>
+                    <a href="{{ route('login') }}" class="rounded-full py-2 px-4 border border-blue-950 text-[#212121] hover:bg-[#FFBD2A] hover:border-white transition">ورود</a>
+                    <a href="{{ route('register') }}" class="rounded-full py-2 px-4 border border-blue-950 text-[#212121] hover:bg-[#FFBD2A] hover:border-white transition">ثبت نام</a>
+                </div>
+            @endauth
         </div>
     </div>
 
@@ -67,8 +74,11 @@
                     تنظیمات
                 </x-mobile-link>
             @else
-                <x-mobile-link :href="route('')" :active="request()->routeIs('home')">
+                <x-mobile-link :href="route('login')">
                     ورود
+                </x-mobile-link>
+                <x-mobile-link :href="route('register')">
+                    ثبت نام
                 </x-mobile-link>
             @endauth
         </div>
