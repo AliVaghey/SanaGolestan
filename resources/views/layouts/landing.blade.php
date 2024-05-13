@@ -38,6 +38,8 @@
             <main>
                 {{ $slot }}
             </main>
+
+            <livewire:layout.LandingFooter />
         </div>
     </body>
 </html>

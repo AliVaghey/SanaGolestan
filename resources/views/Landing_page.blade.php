@@ -9,7 +9,7 @@
     {{-- Hero Section --}}
     <div>
         <img class="w-full h-80 sm:h-auto -z-50" src="{{ Vite::image('hero_section.png') }}" alt="hero_image" draggable="false">
-        <div class="absolute top-12 right-10 sm:top-16 sm:right-12 md:top-24 md:right-10 lg:top-60 lg:right-36">
+        <div class="absolute top-12 right-16 sm:top-16 sm:right-12 md:top-24 md:right-10 lg:top-60 lg:right-36">
 
             <h1 class="text-lg lg:text-5xl md:text-3xl font-bold text-white">شرکت حسابداران برتر<br> سناء گلستان</h1>
             <p class="mt-5 text-xs lg:text-lg text-[#F9F9F9]">ارائه کلیه خدمات حسابداری و حسابرسی به <br class="sm:hidden"> مشاوره تخصصی در امور مالی</p>

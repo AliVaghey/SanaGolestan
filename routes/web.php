@@ -12,6 +12,6 @@ Route::view('packages', 'packages')->name('packages');
 Route::middleware(['auth'])->prefix('panel/')->group(function () {
     Route::view('/', 'panel.dashboard');
     Route::view('/dashboard', 'panel.dashboard')->name('dashboard');
-    Route::view('/packages', 'panel.packages')->name('packages');
+    Route::view('/packages', 'panel.packages')->name('my-packages');
     Route::view('/profile', 'panel.profile')->name('profile');
 });
