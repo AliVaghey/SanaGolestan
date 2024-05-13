@@ -9,7 +9,7 @@
         <meta name="keywords" content="حسابداری, حسابرسی, مالیات, استخدام">
     </x-slot>
 
-    <div class="w-screen pt-16 lg:pt-40 flex lg:flex-row flex-col items-center lg:items-start lg:justify-center">
+    <div class="w-screen pt-16 lg:pt-40 flex lg:flex-row flex-col items-center lg:items-start lg:justify-center mb-20">
         <div class="lg:pl-20 flex flex-col lg:pr-20 w-5/6 lg:w-2/5">
             <h1 class="font-bold text-3xl">شرکت حسابداران برتر <strong class="text-[#FFBD2A]">سناء گلستان</strong></h1>
             <h3 class="text-[#2D3676] text-lg py-5">خدمات</h3>

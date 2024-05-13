@@ -35,7 +35,7 @@
             @endif
 
             <!-- Page Content -->
-            <main>
+            <main CLASS="w-screen">
                 {{ $slot }}
             </main>
 

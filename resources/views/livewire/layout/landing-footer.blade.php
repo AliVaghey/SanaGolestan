@@ -1,4 +1,4 @@
-<footer class="bg-[#26335D] mt-20 lg:mt-40">
+<footer class="bg-[#26335D] lg:mt-40">
     <div class="hidden lg:block">
         <img class="absolute w-screen h-auto -mt-20" src="{{ Vite::image('footer-background.svg') }}" alt="background" draggable="false">
         <div class="flex justify-around px-20">
@@ -25,7 +25,8 @@
                         <div>گرگان،خ شهید رجایی ،گلشن ۹ میرکریم ۷ (خ امام خمینی ره انتهای آفتاب ۱)</div>
                     </div>
                     <div class="flex flex-row gap-3">
-                        گنبد، خ امام خمینی ره، خ مدرس، نرسیده به تقاطع حافظ،کوچه ۶،ساختمان نما سفید طبقه اول
+                        <img src="{{ Vite::image('location.svg') }}" alt="location1">
+                        <div>گنبد، خ امام خمینی ره، خ مدرس، نرسیده به تقاطع حافظ،کوچه ۶،ساختمان نما سفید طبقه اول</div>
                     </div>
                 </div>
             </div>
