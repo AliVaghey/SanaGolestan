@@ -14,13 +14,14 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+    <body dir="rtl" class="font-sans antialiased relative">
+    <img class="absolute top-0 left-0 h-full w-screen -z-50" src="{{ Vite::image('panel-bg.jpg') }}" alt="background">
+        <div class="min-h-screen w-screen flex flex-col lg:flex-row ">
             <livewire:layout.navigation />
 
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white shadow">
+                <header class="">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
