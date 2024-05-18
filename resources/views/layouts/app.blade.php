@@ -15,23 +15,26 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body dir="rtl" class="font-sans antialiased relative">
-    <img class="absolute top-0 left-0 h-full w-screen -z-50" src="{{ Vite::image('panel-bg.jpg') }}" alt="background">
+        <img class="absolute top-0 left-0 h-full w-screen -z-50" src="{{ Vite::image('panel-bg.jpg') }}" alt="background">
         <div class="min-h-screen w-screen flex flex-col lg:flex-row ">
             <livewire:layout.navigation />
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+            <div class="w-full">
+                <!-- Page Heading -->
+                @if (isset($header))
+                    <header class="w-full">
+                        <div class="my-6 ml-5 py-6 border border-navi rounded-3xl bg-white/15 flex justify-between px-5">
+                            {{ $header }}
+                            <x-user></x-user>
+                        </div>
+                    </header>
+                @endif
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+                <!-- Page Content -->
+                <main>
+                    {{ $slot }}
+                </main>
+            </div>
         </div>
     </body>
 </html>

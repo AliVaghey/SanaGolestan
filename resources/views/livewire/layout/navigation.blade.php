@@ -1,4 +1,4 @@
-<nav class="w-1/6 h-screen py-6 sticky border-red-600 border flex items-center justify-center">
+<nav class="w-1/6 h-screen py-6 sticky flex items-center justify-center">
     <div class="hidden lg:flex h-full w-full mx-5 bg-white/15 border border-navi rounded-3xl flex-col items-center justify-between py-5">
         <div class="w-full flex flex-col items-center">
             <img src="{{ Vite::image('title.png') }}" alt="title" draggable="false">
