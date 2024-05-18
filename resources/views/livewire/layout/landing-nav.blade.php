@@ -67,10 +67,10 @@
                 <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     داشبورد
                 </x-mobile-link>
-                <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                <x-mobile-link :href="route('my-packages')" :active="request()->routeIs('my-packages')">
                     دوره های شما
                 </x-mobile-link>
-                <x-mobile-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                <x-mobile-link :href="route('profile')" :active="request()->routeIs('profile')">
                     تنظیمات
                 </x-mobile-link>
             @else
